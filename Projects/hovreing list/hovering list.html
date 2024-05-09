@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+
+    }
+.drop button{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content{
+display: none;
+position: absolute;
+background-color: rgb(146, 222, 222);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px;
+z-index: 1;
+}
+a{
+    color: #333;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+
+</style>
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="drop button">Courses
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Mern</a>
+          <br>
+          <a href="#">React</a>
+          <br>
+          <a href="#">Javascript</a>
+        </div>
+      </div>
+</body>
+</html>

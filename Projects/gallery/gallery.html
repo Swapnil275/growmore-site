@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0%;
+    }
+   .gallery{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+   
+   }
+   .gallery img{
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+   }
+    
+    .gallery img:hover{
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <div class="gallery">
+        <img src="./Screenshot_20191010-182502_WhatsApp.jpg" alt="">
+        <img src="./Screenshot_20191022-012503_Instagram.jpg" alt="">
+        <img src="./WhatsApp Image 2024-04-29 at 11.48.33 PM.jpeg" alt="">
+        <img src="./WhatsApp Image 2024-04-29 at 11.48.34 PM.jpeg" alt="">
+    </div>
+</body>
+</html>
