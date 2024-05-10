@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .portfolio-container {
+        margin-left: 150px;
+        margin-top: 50px;
+        margin-right: auto;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 1.875pc;
+        margin-top: 1.875pc;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        box-sizing: border-box;
+        position: absolute;
+    }
+
+    .portfolio-card {
+        width: 150px;
+        height: 200px;
+        perspective: 1000px;
+        margin: 10px;
+    }
+    .portfolio-card div{
+        height: 92%;
+    width: 175%;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    .front {
+  
+  color: rgb(8, 7, 7);
+
+  transition: transform 0.5s;
+}
+
+.back {
+  background-color: #dd7165;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+.portfolio-card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.portfolio-card:hover .back {
+  transform: rotateY(0deg);
+}
+.back img{
+    height: 200px;
+        width: 300px;
+        padding: 25px
+}
+.front{
+    height: 200px;
+        width: 300px;
+        padding: 25px
+}
+</style>
+
+<body>
+    <div class="portfolio-container">
+        <div class="portfolio-card">
+            <div class="front" style="background-color: #dd7165;">
+                <h1>Blood Donation Website</h1>
+                <P>Used tool: HTML, CSS & java-script</P>
+            </div>
+            <div class="back"><img src="../image/blood donation 1.jpg" alt=""></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="front"  style="background-color: #dda765;">
+                <h1> E-commerce Website</h1>
+                <P>Used tool: HTML, CSS & java-script</P>
+            </div>
+            <div class="back"> <img src="../image/E-commerce.webp" alt=""></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="front"  style="background-color: #addd65;">
+                <h1>Bank Management System</h1>
+                <P>Used tool: HTML, CSS & java-script</P>
+            </div>
+            <div class="back"> <img src="../image/banking-management2.jpg" alt=""></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="front"  style="background-color: #65ddb7;">
+                <h1>Food Order System</h1>
+                <P>Used tool: HTML, CSS & java-script</P>
+            </div>
+            <div class="back"> <img src="../image/food order.png" alt=""></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="front"  style="background-color: #65b1dd;">
+                <h1>Restaurant Delivery Application</h1>
+                <p>Used tool: HTML, CSS & java-script</p>
+            </div>
+            <div class="back"><img src="../image/restaurant delivery.png" alt=""></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="front"  style="background-color: #dd65b1;">
+                <h1>Digital Portfolio</h1>
+                <p>Used tool: HTML, CSS & java-script</p>
+            </div>
+            <div class="back"><img src="../image/Digital portfolio.webp" alt=""></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="front"  style="background-color: #f85252;">
+                <h1>Static Responsive Food Ordering Website</h1>
+                <p> Used tool: HTML, CSS & java-script</p>
+            </div>
+            <div class="back"> <img src="../image/static responseive.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
