@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .menu {
+        list-style-type: none;
+    }
+
+    .menu li {
+        display: inline;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .get-started {
+        border-radius: 10px;
+        background-color: #6A5ACD;
+        color: white;
+
+        border: none;
+    }
+</style>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        color: aliceblue;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .useful-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .useful-links li {
+        margin-bottom: 10px;
+    }
+
+    .services {
+        font-weight: bold;
+    }
+
+    .contact-info {
+        text-align: right;
+    }
+
+    li,
+    a {
+        color: rgb(165, 160, 160);
+        text-decoration: none;
+    }
+
+    .solutioncontainer {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 1.875pc;
+        margin-top: 1.875pc;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        box-sizing: border-box;
+    }
+
+    .solutioncard {
+        flex: 1 1 0%;
+        max-width: 300px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0in 10px 14.25pt 7px;
+        border-radius: 0.15625in;
+        padding-left: 0.416 67in;
+        padding-bottom: 0.416667in;
+        padding-right: 0.416667in;
+        padding-top: 0.416667in;
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .solutioncard:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0pc 10px 44.25pt 2.1875pc;
+        transform: scale(1.1);
+    }
+
+    .gif-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 1.875pc;
+        margin-top: 1.875pc;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        box-sizing: border-box;
+    }
+
+    .gif {
+        flex: 1 1 0%;
+        max-width: 300px;
+        margin: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .circle ul li {
+        position: absolute;
+        list-style: none;
+        opacity: 0;
+
+    }
+
+    .circle li {
+        margin-bottom: -1400px;
+        left: 15vw;
+
+    }
+
+    .circle li:nth-child(2) {
+        animation: circle 100s linear infinite;
+        left: 20vw;
+    }
+
+    .circle li:nth-child(1) {
+        animation: circle 200s linear infinite;
+        left: 4vw;
+    }
+
+    .circle li:nth-child(3) {
+        animation: circle 150s linear infinite;
+        left: 40vw;
+    }
+
+    .circle li:nth-child(4) {
+        animation: circle 300s linear infinite;
+        left: 60vw;
+    }
+
+    .circle li:nth-child(5) {
+        animation: circle 400s linear infinite;
+        left: 80vw;
+    }
+
+    .circle li:nth-child(6) {
+        animation: circle 200s linear infinite;
+        left: 100vw;
+    }
+
+    @keyframes circle {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+            bottom: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+            bottom: 900vh;
+        }
+
+    }
+
+    .icon-container {
+
+        margin: 100px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 2px dashed rgb(116, 116, 200);
+        display: flex;
+        justify-content: center;
+
+        background-color: rgb(222, 235, 239);
+
+
+        .icon {
+            width: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            align-items: center;
+            transition: transform 0.2s;
+            position: relative;
+            display: flex;
+
+        }
+    }
+
+    .icon:hover {
+        transform: scale(1.5);
+    }
+
+    .img {
+        margin: -39px;
+    }
+
+    .icons {
+        .icon:nth-child(1) {
+            top: 131px;
+            left: 147px;
+        }
+
+        .icon:nth-child(2) {
+            top: -74px;
+            left: 17%;
+        }
+
+        .icon:nth-child(3) {
+            top: 27px;
+            left: -299%;
+        }
+
+        .icon:nth-child(4) {
+            top: -69px;
+            left: 203%;
+        }
+
+        .icon:nth-child(5) {
+            top: 55px;
+            left: 218%;
+        }
+
+        .icon:nth-child(6) {
+            top: 5px;
+            left: -224%;
+        }
+
+        .icon:nth-child(7) {
+            top: 0px;
+            left: 0%;
+
+        }
+
+        .icon:nth-child(8) {
+            top: -310px;
+            left: -220%;
+        }
+
+        .icon:nth-child(9) {
+            top: -348px;
+            left: 238%;
+        }
+    }
+
+    .portfolio-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 1.875pc;
+        margin-top: 1.875pc;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        box-sizing: border-box;
+    }
+
+    .portfolio-container img {
+        height: 200px;
+        width: 300px;
+        padding: 25px
+    }
+
+    .portfolio-card {
+        flex: 1 1 0%;
+        max-width: 350px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0in 10px 14.25pt 7px;
+        border-radius: 0.15625in;
+        padding-left: 0.416 67in;
+        padding-bottom: 0.416667in;
+        padding-right: 0.416667in;
+        padding-top: 0.416667in;
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: rgb(129, 121, 121);
+    }
+
+    .portfolio-card h1,
+    p {
+        text-align: center;
+        margin-left: 34px;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <div class="navbar">
+            <div class="logo"><img src="../image/dc4d08a3-b79a-42e8-b85c-17cedbb887d3.jpg" alt=""></div>
+            <ul class="menu">
+                <li><a href="#" style="color: black;">Home</a></li>
+                <li><a href="#" style="color: black;">About</a></li>
+                <li><a href="#" style="color: black;">Courses</a></li>
+                <li><a href="#" style="color: black;">Contact</a></li>
+            </ul>
+            <button class="get-started" type="button" name="click me">Get Started</button>
+        </div>
+    </fieldset>
+</body>
+<br>
+
+<body>
+    <div class="core-value-heading">
+        <h1 style="color: blue;">
+            <center>Our Core Value</center>
+        </h1>
+    </div>
+    <div class="gif-container">
+        <div class="gif">
+            <img src="../image/vision.gif" alt="" style="width: 6.875pc;
+            height: 1.14583in;">
+            <h1 style="color: black;">Vision</h1>
+            <p style="color: gray;">We see beyond the horizon. Our team is united by a shared vision of innovation and
+                progress. We're not just keeping pace with technological change; we're defining it.</p>
+        </div>
+        <div class="gif">
+            <img src="../image/Exepertise.gif" alt="" style="width: 6.875pc;
+            height: 1.14583in;">
+            <h1 style="color: black;">Expertise</h1>
+            <p style="color: gray;">Our team comprises seasoned professionals who bring years of industry knowledge and
+                technical proficiency to the table. We understand your unique challenges and are poised to find the
+                right solutions.</p>
+        </div>
+        <div class="gif">
+            <img src="../image/cost saving.gif" alt="" style="width: 6.875pc;
+            height: 1.14583in;">
+            <h1 style="color: black;">Cost Saving</h1>
+            <p style="color: gray;">We understand that efficiency and profitability are paramount. Our solutions are
+                designed to streamline processes, reduce costs, and enhance your financial well-being.</p>
+        </div>
+        <div class="gif">
+            <img src="../image/bpa.gif" alt="" style="width: 6.875pc;
+            height: 1.14583in;">
+            <h1 style="color: black;">User-Centric BPA</h1>
+            <p style="color: gray;">Business Process Automation (BPA) is not just about efficiency for us; it's about
+                creating seamless and attractive experiences for end users. We aim to make technology work for your
+                team, not the other way around</p>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="solution heading">
+        <h1 style="color: black;">
+            <center>Digital Presence Solution</center>
+        </h1>
+        <h3 style="color: blue;">
+            <center>Our Solution</center>
+        </h3>
+    </div>
+    <div class="solutioncontainer">
+        <div class="solutioncard">
+            <img src="../image/managed it services.png" alt="">
+            <h1 style="color: black;">Managed IT services</h1>
+            <p style="color: grey;">Outsourcing IT management and maintenance, including network monitoring, data
+                backup, cybersecurity, help desk support.</p>
+        </div>
+        <div class="solutioncard">
+            <img src="../image/web development.png" alt="">
+            <h1 style="color: black;">Website Development</h1>
+            <p style="color: grey;">Creating stunning and functional websites tailored to your business needs. Our
+                services include web design, development, and optimization for a seamless online presence.</p>
+        </div>
+        <div class="solutioncard">
+            <img src="../image/cloud computing.png" alt="">
+            <h1 style="color: black;">Cloud computing</h1>
+            <p style="color: grey;">Access to remote servers and infrastructure for data storage, application hosting,
+                and scalable resources.</p>
+        </div>
+        <div class="solutioncard">
+            <img src="../image/cyber-security-96.png" alt="">
+            <h1 style="color: black;">Cybersecurity Solutions</h1>
+            <p style="color: grey;">Protecting businesses from cyber threats through measures like network security,
+                encryption, and training.</p>
+        </div>
+        <div class="solutioncard">
+            <img src="../image/data analytics.png" alt="">
+            <h1 style="color: black;">Data Analytics</h1>
+            <p style="color: grey;">Services for data storage, backup, integration, governance, and analytics to drive
+                insights and informed decisions.</p>
+        </div>
+        <div class="solutioncard">
+            <img src="../image/software development.png" alt="">
+            <h1 style="color: black;">Software Development</h1>
+            <p style="color: grey;">Custom software development and integration services to meet specific business
+                needs.</p>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class="icon-container">
+
+        <div class="icons">
+
+            <img class="icon" src="https://dmtechs.com/img/icons8-nodejs.svg" alt="">
+            <img class="icon" src="../image/python.png" alt="">
+            <img class="icon" src="https://dmtechs.com/img/icons8-html-5.svg" alt="">
+            <img class="img" src="../image/1.1.jpg" alt="" height="100px">
+            <img class="icon" src="../image/atom.png" alt="">
+            <img class="icon" src="../image/css-3.png" alt="">
+            <img class="icon" src="../image/java.png" alt="">
+            <img class="icon" src="../image/java-script.png" alt="">
+            <img class="icon" src="../image/data.png" alt="">
+
+        </div>
+
+    </div>
+
+</body>
+
+<body>
+    <h1 style="color: black;">
+        <center> Portfolio</center>
+    </h1>
+    <div class="portfolio-container">
+        <div class="portfolio-card">
+            <img src="../image/blood donation 1.jpg" alt="">
+            <h1>Blood Donation Website</h1>
+            <P>Used tool: HTML, CSS & java-script</P>
+        </div>
+        <div class="portfolio-card">
+            <img src="../image/E-commerce.webp" alt="">
+            <h1> E-commerce Website</h1>
+            <P>Used tool: HTML, CSS & java-script</P>
+        </div>
+        <div class="portfolio-card">
+            <img src="../image/banking-management2.jpg" alt="">
+            <h1>Bank Management System</h1>
+            <P>Used tool: HTML, CSS & java-script</P>
+        </div>
+        <div class="portfolio-card">
+            <img src="../image/food order.png" alt="">
+            <h1>Food Order System</h1>
+            <P>Used tool: HTML, CSS & java-script</P>
+        </div>
+        <div class="portfolio-card">
+            <img src="../image/restaurant delivery.png" alt="">
+            <h1>Restaurant Delivery Application</h1>
+            <p>Used tool: HTML, CSS & java-script</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="../image/Digital portfolio.webp" alt="">
+            <h1>Digital Portfolio</h1>
+            <p>Used tool: HTML, CSS & java-script</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="../image/static responseive.jpg" alt="">
+            <h1>Static Responsive Food Ordering Website</h1>
+            <p> Used tool: HTML, CSS & java-script</p>
+        </div>
+    </div>
+</body>
+
+<body>
+
+
+    <footer style="background-color: rgb(35, 2, 35);">
+        <div class="footer">
+            <div class="logo">Growmore Technoline Pvt.Ltd.</div>
+            <i class="fa-solid fa-laptop"></i>
+            <ul class="useful links">
+                <p> <b>Useful Links</b></p>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+
+            <div class="services">
+                Our Services
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Mobile Application</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4> GroMore Technoline Pvt. Ltd.</h4><br>
+                Survey no. 48/28,<br> Near Pratik Hostel,<br>
+                Manaji Nagar, Narhe,<br> Pune<br>
+                Phone: +919146096429<br>
+                Email: bobadeganesh@gmail.com
+            </div>
+            <i class="fa-brands fa-instagram"></i>
+
+        </div>
+    </footer>
+</body>
+
+<body>
+    <footer>
+        <div class="circle">
+            <ul>
+                <li><img src="https://dmtechs.com/img/icons8-nodejs.svg"></li>
+                <li><img src="https://dmtechs.com/img/icons8-c++.svg"></li>
+                <li><img src="https://dmtechs.com/img/icons8-html-5.svg"></li>
+                <li><img src="https://dmtechs.com/img/icons8-c++.svg"></li>
+                <li><img src="https://dmtechs.com/img/icons8-cms-48.png"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
